@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backend Palembang 27</title>
+    <title>Books</title>
 </head>
 <body>
-    Hello World!
+    <p id="nama"></p>
+    <p id="number"></p>
+    <p id="namaDokter"></p>
+    <p id="dateBook"></p>
+    <p id="question"></p>
+
+    <script>
+        // const urlParams = new URLSearchParams(window.location.search);
+        fetch("/api/books", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            title: formData.get("title"),
+            releaseYear: formData.get("releaseYear"),
+          }),
+        });
+      
+    </script>
 </body>
 </html>
