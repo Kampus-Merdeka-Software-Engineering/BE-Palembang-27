@@ -8,4 +8,4 @@ const doctorAvailabilitys = sequelize.define("doctorAvailabilitys", {
   is_available: DataTypes.CHAR, 
 });
 
-export default doctorAvailabilitys;
+export default doctorAvailabilitys; 

@@ -7,4 +7,4 @@ export const findDoctorAvailabilityById = async (id) => {
 export const createDoctorAvailability = async (day_of_week, start_time, end_time, is_available) => {
   return await doctorAvailabilitys.create({ day_of_week, start_time, end_time, is_available });
   await createDoctorAvailability(day_of_week, start_time, end_time, is_available);
-};
+}; 

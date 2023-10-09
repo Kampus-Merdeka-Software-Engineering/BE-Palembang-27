@@ -16,4 +16,4 @@ export const startSequelize = async (sequelize) => {
   } catch (e) {
     console.error("Connection to database failure!", e);
   }
-};
+}; 

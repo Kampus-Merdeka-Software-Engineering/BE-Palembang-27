@@ -4,7 +4,7 @@ import { httpStatusMesage } from "../constants/httpStatusMessage.js";
 /**
  *
  * @param {express.Request} request
- * @param {express.Response} response
+ * @param {express.Response} response   
  */
 export const postCreateDoctor = async (request, response) => {
     const { first_name, last_name, professional_statement, practicing_from } = request.body;

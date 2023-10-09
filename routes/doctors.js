@@ -11,4 +11,4 @@ response.json({
 
 doctorsRouter.post("/", postCreateDoctor);
 
-export default doctorsRouter;
+export default doctorsRouter; 

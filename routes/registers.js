@@ -11,4 +11,4 @@ response.json({
 
 registersRouter.post("/", postCreateRegister);
 
-export default registersRouter;
+export default registersRouter; 

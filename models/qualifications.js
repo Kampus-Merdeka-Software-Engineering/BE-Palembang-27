@@ -7,4 +7,4 @@ const Qualifications = sequelize.define("Qualifications", {
   institute_name: DataTypes.STRING, 
 });
 
-export default Qualifications;
+export default Qualifications; 

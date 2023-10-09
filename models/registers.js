@@ -6,7 +6,7 @@ const Registers= sequelize.define("Registers", {
   password: DataTypes.STRING,
   fullName: DataTypes.STRING, 
   email: DataTypes.STRING, 
-  phone: DataTypes.STRING,
+  phone: DataTypes.STRING, 
 });
 
 export default Registers;

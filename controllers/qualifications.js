@@ -11,7 +11,7 @@ export const postCreateQualification = async (request, response) => {
     const qualification = await createQualification(doctors_id, qualification_name, institute_name);
 
     
-  response.json({
+  response.json({  
     data: qualification,
     message: httpStatusMesage[response.status],
   });

@@ -8,4 +8,4 @@ const Doctors = sequelize.define("Doctors", {
   practicing_from: DataTypes.DATE, 
 });
 
-export default Doctors;
+export default Doctors; 

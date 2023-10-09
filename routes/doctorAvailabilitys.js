@@ -11,4 +11,4 @@ response.json({
 
 doctorAvailabilitysRouter.post("/", postCreateDoctorAvailability);
 
-export default doctorAvailabilitysRouter;
+export default doctorAvailabilitysRouter; 

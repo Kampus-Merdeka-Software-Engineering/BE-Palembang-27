@@ -4,7 +4,7 @@ import { httpStatusMesage } from "../constants/httpStatusMessage.js";
 /**
  *
  * @param {express.Request} request
- * @param {express.Response} response
+ * @param {express.Response} response 
  */
 export const postCreateDoctorAvailability = async (request, response) => {
     const { day_of_week, start_time, end_time, is_available } = request.body;

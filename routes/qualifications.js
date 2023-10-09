@@ -11,4 +11,4 @@ response.json({
 
 qualificationsRouter.post("/", postCreateQualification);
 
-export default qualificationsRouter;
+export default qualificationsRouter; 

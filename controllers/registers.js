@@ -11,7 +11,7 @@ export const postCreateRegister = async (request, response) => {
     const register = await createRegister(userName, password, fullName, email, phone);
 
     
-  response.json({
+  response.json({ 
     data: register,
     message: httpStatusMesage[response.status],
   });
