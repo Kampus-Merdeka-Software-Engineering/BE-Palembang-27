@@ -42,7 +42,7 @@ app.use((error, request, response, next) => {
   });
    
 
-startSequelize(sequelize); 
+startSequelize(sequelize);  
 
 // routes / URL / endpoint utama method GET
 
