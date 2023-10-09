@@ -5,8 +5,12 @@ import sequelize from "./config/sequelize.js";
 import { startSequelize } from "./utils/startSequelize.js";
 
 import "./models/index.js";
+
 import doctorsRouter from "./routes/doctors.js";
 import qualificationsRouter from "./routes/qualifications.js";
+import doctorAvailabilitysRouter from "./routes/doctorAvailabilitys.js";
+import registersRouter from "./routes/registers.js";
+
 
 dotenv.config();
 
@@ -25,6 +29,8 @@ app.use("/doctors", express.static("public/books.html"));
 
 app.use("/api/doctors",doctorsRouter);
 app.use("/api/qualifications", qualificationsRouter);
+app.use("/api/doctorAvailabilitys", doctorAvailabilitysRouter);
+app.use("/api/registers", registersRouter);
 
 app.use((error, request, response, next) => {
     response.status(500).json({
