@@ -11,6 +11,7 @@ import qualificationsRouter from "./routes/qualifications.js";
 import doctorAvailabilitysRouter from "./routes/doctorAvailabilitys.js";
 import registersRouter from "./routes/registers.js";
 import loginsRouter from "./routes/logins.js";
+import appoinmentsRouter from "./routes/appoinment.js";
 
 
 
@@ -31,6 +32,7 @@ app.use("/api/qualifications", qualificationsRouter);
 app.use("/api/doctorAvailabilitys", doctorAvailabilitysRouter);
 app.use("/api/registers", registersRouter);
 app.use("/api/logins", loginsRouter);
+app.use("/api/appoinments", appoinmentsRouter);
 
 
 app.use((error, request, response, next) => {
