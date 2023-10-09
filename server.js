@@ -10,10 +10,11 @@ import doctorsRouter from "./routes/doctors.js";
 import qualificationsRouter from "./routes/qualifications.js";
 import doctorAvailabilitysRouter from "./routes/doctorAvailabilitys.js";
 import registersRouter from "./routes/registers.js";
+import loginsRouter from "./routes/logins.js";
+
 
 
 dotenv.config();
-
 
 const app = express();
 const port = 3000;
@@ -25,12 +26,12 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.raw());
 app.use(bodyParser.json());
 
-app.use("/doctors", express.static("public/books.html"));
-
-app.use("/api/doctors",doctorsRouter);
+app.use("/api/doctors", doctorsRouter);
 app.use("/api/qualifications", qualificationsRouter);
 app.use("/api/doctorAvailabilitys", doctorAvailabilitysRouter);
 app.use("/api/registers", registersRouter);
+app.use("/api/logins", loginsRouter);
+
 
 app.use((error, request, response, next) => {
     response.status(500).json({
