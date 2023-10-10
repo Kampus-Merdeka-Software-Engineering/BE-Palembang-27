@@ -67,11 +67,6 @@ const jalankanServer = async() => {
     } catch (error) {}
 };
 
-jalankanServer();
-
-// routes / URL / endpoint utama method GET
-
-
 
 app.listen(port, () => {
     console.log(`Server is running at port ${port}`);
