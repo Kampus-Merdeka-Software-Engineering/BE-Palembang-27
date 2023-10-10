@@ -5,7 +5,7 @@ const Appoinments = sequelize.define("Appoinments", {
   yourName: DataTypes.STRING,
   yourNumber: DataTypes.STRING,
   yourEmail: DataTypes.STRING, 
-  dateBooking: DataTypes.DATE, 
+  birthDate: DataTypes.DATE, 
 });
 
 export default Appoinments; 

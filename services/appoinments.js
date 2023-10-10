@@ -4,7 +4,7 @@ export const findAppoinmentById = async (id) => {
   return await Appoinments.findOne({ where: { id } });
 };
 
-export const createAppoinment = async (yourName, yourNumber, yourEmail, dateBooking) => {
-  return await Appoinments.create({ yourName, yourNumber, yourEmail, dateBooking });
-  await createAppoinment(yourName, yourNumber, yourEmail, dateBooking); 
+export const createAppoinment = async (yourName, yourNumber, yourEmail, birthDate) => {
+  return await Appoinments.create({ yourName, yourNumber, yourEmail, birthDate });
+  await createAppoinment(yourName, yourNumber, yourEmail, birthDate); 
 }; 

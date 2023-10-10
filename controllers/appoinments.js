@@ -7,8 +7,8 @@ import { httpStatusMesage } from "../constants/httpStatusMessage.js";
  * @param {express.Response} response   
  */
 export const postCreateAppoinment = async (request, response) => {
-    const { yourName, yourNumber, yourEmail, dateBooking } = request.body;
-    const appoinment = await createAppoinment(yourName, yourNumber, yourEmail, dateBooking);
+    const { yourName, yourNumber, yourEmail, birthDate } = request.body;
+    const appoinment = await createAppoinment(yourName, yourNumber, yourEmail, birthDate);
 
     
   response.json({
